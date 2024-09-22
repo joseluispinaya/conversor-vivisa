@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de Javascript</title>
+    <link href="./pluguin/sweetalert.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="titlez">Convertidor de divisas</div>
+    <div class="inputz">
+        <label class="labelz" for="monto">Cantidad:</label>
+        <input type="text" id="monto" placeholder="Ingresa aca el monto del dinero">
+    </div>
+    <div class="inputz">
+        <label class="labelz" for="de">De:</label>
+        <select name="de" id="de">
+            <option value="BOB">Bolivianos</option>
+            <option value="CLP">Pesos Chilenos</option>
+            <option value="MXN">Pesos Mexicanos</option>
+            <option value="ARS">Pesos argentinos</option>
+            <option value="USD">Dolares</option>
+        </select>
+    </div>
+    <div class="inputz">
+        <label class="labelz" for="a">A:</label>
+        <select name="a" id="a">
+            <option value="BOB">Bolivianos</option>
+            <option value="CLP">Pesos Chilenos</option>
+            <option value="MXN">Pesos Mexicanos</option>
+            <option value="ARS">Pesos argentinos</option>
+            <option value="USD">Dolares</option>
+        </select>
+    </div>
+    <div class="taza-container">
+        <div class="cambio" id="tipocambio"></div>
+    </div>
+    <div class="buttonContainerz">
+        <button id="calcular">Calcular</button>
+    </div>
+    <div class="inputz">
+        <label class="labelz" for="respuesta">Resultado:</label>
+        <input type="text" id="respuesta" readonly>
+    </div>
+
+    <script src="./pluguin/jquery.min.js"></script>
+    <script src="./pluguin/sweetalert.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
